@@ -1,4 +1,4 @@
-<img width="1216" height="1003" alt="Screenshot 2025-12-27 at 5 18 37 PM" src="https://github.com/user-attachments/assets/9c58b311-ed02-410d-8077-c186e4f15835" /># Java gRPC Examples
+# Java gRPC Examples
 
 A comprehensive collection of gRPC examples in Java demonstrating both simple and advanced gRPC patterns including unary, server streaming, client streaming, bidirectional streaming, interceptors, and deadlines.
 
