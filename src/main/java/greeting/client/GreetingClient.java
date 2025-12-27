@@ -12,7 +12,7 @@ public final class GreetingClient {
     private static void doGreet(ManagedChannel channel) {
         System.out.println("Enter doGreet");
         GreetingServiceGrpc.GreetingServiceBlockingStub stub = GreetingServiceGrpc.newBlockingStub(channel);
-        GreetingResponse response = stub.greet(GreetingRequest.newBuilder().setFirstName("Clement").build());
+        GreetingResponse response = stub.greet(GreetingRequest.newBuilder().setFirstName("Mohan").build());
 
         System.out.println("Greeting: " + response.getResult());
     }
@@ -21,7 +21,7 @@ public final class GreetingClient {
         System.out.println("Enter doGreetManyTimes");
         GreetingServiceGrpc.GreetingServiceBlockingStub stub = GreetingServiceGrpc.newBlockingStub(channel);
 
-        stub.greetManyTimes(GreetingRequest.newBuilder().setFirstName("Clement").build()).forEachRemaining(response ->
+        stub.greetManyTimes(GreetingRequest.newBuilder().setFirstName("Mohan").build()).forEachRemaining(response ->
             System.out.println(response.getResult())
         );
     }
@@ -46,7 +46,7 @@ public final class GreetingClient {
             }
         });
 
-        Arrays.asList("Clement", "Marie", "Test").forEach(name ->
+        Arrays.asList("Mohan", "Marie", "Test").forEach(name ->
             stream.onNext(GreetingRequest.newBuilder().setFirstName(name).build())
         );
 
@@ -76,7 +76,7 @@ public final class GreetingClient {
             }
         });
 
-        Arrays.asList("Clement", "Marie", "Test").forEach(name ->
+        Arrays.asList("Mohan", "Marie", "Test").forEach(name ->
             stream.onNext(GreetingRequest.newBuilder().setFirstName(name).build())
         );
 
@@ -89,7 +89,7 @@ public final class GreetingClient {
     private static void doGreetWithDeadline(ManagedChannel channel) {
         System.out.println("Enter doGreetWithDeadline");
         GreetingServiceGrpc.GreetingServiceBlockingStub stub = GreetingServiceGrpc.newBlockingStub(channel);
-        GreetingRequest request = GreetingRequest.newBuilder().setFirstName("Clement").build();
+        GreetingRequest request = GreetingRequest.newBuilder().setFirstName("Mohan").build();
         GreetingResponse response = stub.withDeadline(Deadline.after(3, TimeUnit.SECONDS))
                 .greetWithDeadline(request);
 
