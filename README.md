@@ -1,6 +1,7 @@
 # Java gRPC Examples
 
-A comprehensive collection of gRPC examples in Java demonstrating both simple and advanced gRPC patterns including unary, server streaming, client streaming, bidirectional streaming, interceptors, and deadlines.
+A comprehensive collection of gRPC examples in Java demonstrating both simple and advanced gRPC patterns including unary, server streaming, client streaming, bidirectional streaming, interceptors and deadlines.
+Sample code to start with gRPC in Java. 
 
 ## 🚀 Features
 
